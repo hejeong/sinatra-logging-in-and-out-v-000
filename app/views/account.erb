@@ -1,4 +1,4 @@
 <% if Helper.is_logged_in? %>
-<h2><%= @user.name %></h2>
+<h2><%= Helper.current_user.name %></h2>
 <h5>Balance: <%=@user.balance %></h5>
 <% end %>
