@@ -15,11 +15,11 @@ class ApplicationController < Sinatra::Base
     if @user && @user.password == params[:password]
       redirect to '/account'
     else
-      redirect t
+      erb :error
   end
 
   get '/account' do
-
+    erb :account
   end
 
   get '/logout' do
