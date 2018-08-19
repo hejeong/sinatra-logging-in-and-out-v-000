@@ -1,4 +1,4 @@
-<% if Helper.is_logged_in? %>
-<h2><%= Helper.current_user.name %></h2>
-<h5>Balance: <%=Helper.current_user.balance %></h5>
+<% if Helpers.is_logged_in? %>
+<h2><%= Helpers.current_user.name %></h2>
+<h5>Balance: <%=Helpers.current_user.balance %></h5>
 <% end %>
